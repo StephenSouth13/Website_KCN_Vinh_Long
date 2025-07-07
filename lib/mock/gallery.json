@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "url": "/placeholder.svg?height=400&width=600",
+    "title": "Khu Công nghiệp Vĩnh Long từ trên cao",
+    "album": "KCN Vĩnh Long",
+    "description": "Toàn cảnh Khu Công nghiệp Vĩnh Long nhìn từ flycam"
+  },
+  {
+    "id": "2",
+    "url": "/placeholder.svg?height=400&width=600",
+    "title": "Nhà máy sản xuất hiện đại",
+    "album": "KCN Vĩnh Long",
+    "description": "Các nhà máy với công nghệ tiên tiến"
+  },
+  {
+    "id": "3",
+    "url": "/placeholder.svg?height=400&width=600",
+    "title": "Robot tự động hóa",
+    "album": "Công nghệ 4.0",
+    "description": "Hệ thống robot trong dây chuyền sản xuất"
+  },
+  {
+    "id": "4",
+    "url": "/placeholder.svg?height=400&width=600",
+    "title": "Hệ thống IoT thông minh",
+    "album": "Công nghệ 4.0",
+    "description": "Giám sát và điều khiển thông minh"
+  },
+  {
+    "id": "5",
+    "url": "/placeholder.svg?height=400&width=600",
+    "title": "IPEX 2024 - Lễ khai mạc",
+    "album": "Sự kiện",
+    "description": "Lễ khai mạc triển lãm năm 2024"
+  },
+  {
+    "id": "6",
+    "url": "/placeholder.svg?height=400&width=600",
+    "title": "Gian hàng triển lãm",
+    "album": "Sự kiện",
+    "description": "Các gian hàng tại triển lãm"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "title": "Lễ khai mạc triển lãm IPEX 2025",
+    "description": "Lễ khai mạc chính thức với sự tham gia của các lãnh đạo tỉnh và doanh nghiệp",
+    "date": "2025-03-15",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "location": "Sảnh chính",
+    "speaker": "Chủ tịch UBND tỉnh Vĩnh Long",
+    "category": "Lễ hội"
+  },
+  {
+    "id": "2",
+    "title": "Hội thảo: Công nghệ 4.0 trong sản xuất",
+    "description": "Thảo luận về ứng dụng công nghệ 4.0 trong các khu công nghiệp",
+    "date": "2025-03-15",
+    "startTime": "10:30",
+    "endTime": "12:00",
+    "location": "Phòng hội thảo A",
+    "speaker": "TS. Nguyễn Văn A",
+    "category": "Hội thảo"
+  }
+]

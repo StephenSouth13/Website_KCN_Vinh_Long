@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "Công ty TNHH Công nghệ ABC",
+    "logo": "/placeholder.svg?height=100&width=100",
+    "description": "Chuyên cung cấp giải pháp tự động hóa cho ngành sản xuất",
+    "industry": "Tự động hóa",
+    "website": "https://abc-tech.com",
+    "contact": "contact@abc-tech.com",
+    "status": "approved",
+    "booth": "A01"
+  },
+  {
+    "id": "2",
+    "name": "XYZ Manufacturing Solutions",
+    "logo": "/placeholder.svg?height=100&width=100",
+    "description": "Giải pháp sản xuất thông minh và bền vững",
+    "industry": "Sản xuất",
+    "website": "https://xyz-manufacturing.com",
+    "contact": "info@xyz-manufacturing.com",
+    "status": "pending",
+    "booth": "B02"
+  }
+]
