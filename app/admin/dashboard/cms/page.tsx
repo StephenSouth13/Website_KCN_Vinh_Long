@@ -33,16 +33,16 @@ export default function CMSPage() {
 
   const [content, setContent] = useState({
     hero: {
-      title1: "TRIỂN LÃM QUỐC TÉ",
+      title1: "TRIỂN LÃM CUNG ỨNG KCN VĨNH LONG",
       title2: "KCN VĨNH LONG",
-      title3: "IPEX 2025",
+      title3: "Industrial Expo2025",
       description: "Nơi kết nối công nghệ và đổi mới - Khám phá tương lai của ngành công nghiệp",
       backgroundImage: "/placeholder.svg?height=1080&width=1920",
       ctaText1: "Đăng ký tham dự",
       ctaText2: "Tham gia triển lãm",
     },
     about: {
-      title: "Về IPEX 2025",
+      title: "Về Industrial Expo2025",
       description: "Triển lãm Quốc tế Khu Công nghiệp Vĩnh Long - Nơi hội tụ công nghệ và đổi mới",
       content:
         "Khu Công nghiệp Vĩnh Long là một trong những khu công nghiệp phát triển mạnh nhất tại vùng Đồng bằng sông Cửu Long...",
@@ -54,8 +54,8 @@ export default function CMSPage() {
       { number: "3", label: "Ngày triển lãm" },
     ],
     reasons: {
-      title: "Tại sao nên tham gia IPEX 2025?",
-      subtitle: "Khám phá những lý do khiến IPEX 2025 trở thành sự kiện không thể bỏ lỡ",
+      title: "Tại sao nên tham gia Industrial Expo2025?",
+      subtitle: "Khám phá những lý do khiến Industrial Expo2025 trở thành sự kiện không thể bỏ lỡ",
       items: [
         {
           title: "Kết nối doanh nghiệp",
@@ -116,7 +116,7 @@ export default function CMSPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold">Quản lý Nội dung Website</h1>
-          <p className="text-muted-foreground">Chỉnh sửa và cập nhật nội dung trang web IPEX 2025</p>
+          <p className="text-muted-foreground">Chỉnh sửa và cập nhật nội dung trang web Industrial Expo2025</p>
         </div>
         <div className="flex items-center space-x-3">
           <div className="flex items-center space-x-1 bg-muted rounded-lg p-1">

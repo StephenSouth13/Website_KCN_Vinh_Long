@@ -123,7 +123,7 @@ export default function AdminLayout({
             </div>
             <div>
               <h2 className="text-lg font-bold">Admin Portal</h2>
-              <p className="text-sm text-muted-foreground">IPEX 2025</p>
+              <p className="text-sm text-muted-foreground">Industrial Expo2025</p>
             </div>
           </div>
         </SidebarHeader>

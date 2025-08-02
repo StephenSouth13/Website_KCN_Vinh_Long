@@ -49,7 +49,7 @@ export default function FloorplanPage() {
                 <div className="relative">
                   <Image
                     src="/placeholder.svg?height=600&width=1200"
-                    alt="Sơ đồ triển lãm IPEX 2025"
+                    alt="Sơ đồ triển lãm Industrial Expo2025"
                     width={1200}
                     height={600}
                     className="w-full h-auto"

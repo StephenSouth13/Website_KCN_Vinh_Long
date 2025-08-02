@@ -17,7 +17,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Triển lãm Quốc tế KCN Vĩnh Long IPEX 2025",
+  title: "Triển lãm Quốc tế KCN Vĩnh Long Industrial Expo2025",
   description: "Triển lãm Quốc tế Khu Công nghiệp Vĩnh Long 2025 - Nơi kết nối công nghệ và đổi mới",
     generator: 'v0.dev'
 }

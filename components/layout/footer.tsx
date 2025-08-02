@@ -13,7 +13,7 @@ export default function Footer() {
                 <span className="text-white font-bold">VL</span>
               </div>
               <div>
-                <h3 className="text-lg font-bold">IPEX 2025</h3>
+                <h3 className="text-lg font-bold">Industrial Expo2025</h3>
                 <p className="text-sm text-gray-400">Vĩnh Long</p>
               </div>
             </div>

@@ -68,7 +68,7 @@ export default function AdminDashboard() {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold">Tổng quan</h1>
-        <p className="text-muted-foreground">Thống kê tổng quan hệ thống IPEX 2025</p>
+        <p className="text-muted-foreground">Thống kê tổng quan hệ thống Industrial Expo2025</p>
       </div>
 
       {/* Stats Cards */}

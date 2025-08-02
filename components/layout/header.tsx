@@ -75,7 +75,7 @@ export default function Header() {
                 <span className="text-white font-bold text-xl">VL</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900 dark:text-white">IPEX 2025</h1>
+                <h1 className="text-xl font-bold text-gray-900 dark:text-white">Industrial Expo2025</h1>
                 <p className="text-sm text-gray-600 dark:text-gray-300">Vĩnh Long</p>
               </div>
             </Link>

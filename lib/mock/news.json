@@ -1,35 +1,45 @@
 [
   {
     "id": "1",
-    "title": "Triển lãm IPEX 2025 chính thức khởi động với hơn 200 doanh nghiệp tham gia",
+    "title": "Triển lãm cung ứng KCN Hòa Phú 2025 sắp diễn ra với hơn 200 doanh nghiệp tham gia",
     "slug": "ipex-2025-chinh-thuc-khoi-dong",
-    "excerpt": "Triển lãm Quốc tế Khu Công nghiệp Vĩnh Long IPEX 2025 sẽ diễn ra từ ngày 15-17/3/2025 tại Trung tâm Hội chợ Triển lãm Vĩnh Long.",
-    "content": "Triển lãm Quốc tế Khu Công nghiệp Vĩnh Long IPEX 2025 hứa hẹn sẽ là sự kiện lớn nhất trong năm với sự tham gia của hơn 200 doanh nghiệp trong và ngoài nước. Triển lãm sẽ tập trung vào các lĩnh vực công nghệ 4.0, sản xuất thông minh, và phát triển bền vững.\n\nSự kiện này không chỉ là nơi trưng bày sản phẩm mà còn là cầu nối quan trọng giữa các doanh nghiệp, nhà đầu tư và cơ quan quản lý. Với quy mô lớn và tính chất quốc tế, IPEX 2025 sẽ góp phần thúc đẩy sự phát triển của khu vực Đồng bằng sông Cửu Long.",
-    "image": "/placeholder.svg?height=400&width=600",
-    "date": "2024-12-15",
+    "excerpt": "Triển lãm Cung Ứng Khu Công Nghiệp Hòa Phú là sự kiện xúc tiến thương mại. Sự kiện này nhằm giúp các khu công nghiệp mở rộng kết nối với doanh nghiệp...",
+    "image": "/news/exhibition.png",
+    "date": "2025-11-03",
     "author": "Ban Tổ chức",
     "category": "Thông báo"
   },
   {
     "id": "2",
-    "title": "Công nghệ 4.0 - Xu hướng chuyển đổi số trong sản xuất",
+    "title": "Chuyển đổi số trong nhà máy công nghiệp và ứng dụng AI tại Industrial Expo2025",
     "slug": "cong-nghe-4-0-xu-huong-chuyen-doi-so",
-    "excerpt": "Tìm hiểu về những xu hướng mới nhất trong công nghệ 4.0 và ứng dụng trong sản xuất công nghiệp.",
+    "excerpt": "Tại Triển lãm Cung Ứng Khu Công Nghiệp Hòa Phú, các chuyên đề về Chuyển đổi số trong nhà máy công nghiệp sẽ được chia sẻ, tập trung vào giải pháp tự động hóa và quản trị dữ liệu...",
     "content": "Công nghệ 4.0 đang thay đổi cách thức sản xuất và quản lý trong các khu công nghiệp. Với sự phát triển của IoT, AI và Big Data, các doanh nghiệp có thể tối ưu hóa quy trình sản xuất và nâng cao hiệu quả.\n\nViệc ứng dụng công nghệ 4.0 không chỉ giúp tăng năng suất mà còn giảm thiểu tác động đến môi trường, tạo ra một mô hình sản xuất bền vững cho tương lai.",
-    "image": "/placeholder.svg?height=400&width=600",
-    "date": "2024-12-10",
+    "image": "/news/robot.png",
+    "date": "2025-03-10",
     "author": "Chuyên gia công nghệ",
     "category": "Công nghệ"
   },
   {
     "id": "3",
-    "title": "Khu Công nghiệp Vĩnh Long thu hút đầu tư FDI",
+    "title": "Giao thương và Hợp tác Đầu tư tại INDUSTRIAL EXPO 2025",
     "slug": "kcn-vinh-long-thu-hut-dau-tu-fdi",
-    "excerpt": "Với vị trí địa lý thuận lợi và chính sách ưu đãi, KCN Vĩnh Long đang thu hút nhiều nhà đầu tư nước ngoài.",
+    "excerpt": "Triển lãm là cầu nối quan trọng cho các nhà đầu tư tiềm năng và tổ chức xúc tiến thương mại quốc tế muốn mở rộng quan hệ hợp tác xuyên biên giới...",
     "content": "Khu Công nghiệp Vĩnh Long đã và đang trở thành điểm đến hấp dẫn cho các nhà đầu tư nước ngoài nhờ vào vị trí địa lý thuận lợi, hạ tầng hiện đại và chính sách ưu đãi của tỉnh.",
-    "image": "/placeholder.svg?height=400&width=600",
-    "date": "2024-12-08",
+    "image": "/news/expo.png",
+    "date": "2025-12-08",
     "author": "Phóng viên",
+    "category": "Đầu tư"
+  },
+  {
+    "id": "4",
+    "title": "Đừng bỏ lỡ cơ hội biến đổi doanh nghiệp của bạn!",
+    "slug": "kcn-vinh-long-thu-hut-dau-tu-fda",
+    "excerpt": "Kết nối cùng các nhà triển lãm hàng đầu và tìm hiểu cách những công nghệ đột phá....",
+    "content": "Khu Công nghiệp Vĩnh Long đã và đang trở thành điểm đến hấp dẫn cho các nhà đầu tư nước ngoài nhờ vào vị trí địa lý thuận lợi, hạ tầng hiện đại và chính sách ưu đãi của tỉnh.",
+    "image": "/news/tech.png",
+    "date": "2025-12-08",
+    "author": "Diễm",
     "category": "Đầu tư"
   }
 ]

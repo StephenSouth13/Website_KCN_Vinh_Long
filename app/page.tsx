@@ -17,7 +17,7 @@ const reasons = [
   {
     icon: Users,
     title: "Kết nối doanh nghiệp",
-    description: "Gặp gỡ và kết nối với hơn 200 doanh nghiệp hàng đầu trong và ngoài nước",
+    description: "Gặp gỡ và kết nối với hơn 100 doanh nghiệp hàng đầu trong và ngoài nước",
   },
   {
     icon: Building2,
@@ -37,7 +37,7 @@ const reasons = [
 ]
 
 const partners = [
-  { name: "Samsung", logo: "/placeholder.svg?height=60&width=120" },
+  { name: "Kiến văn", logo: "/logo/kienvan.png" },
   { name: "LG", logo: "/placeholder.svg?height=60&width=120" },
   { name: "Panasonic", logo: "/placeholder.svg?height=60&width=120" },
   { name: "Toyota", logo: "/placeholder.svg?height=60&width=120" },
@@ -77,7 +77,7 @@ export default function HomePage() {
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="absolute inset-0 bg-black/40"></div>
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/banners/banner.webp"
           alt="Vĩnh Long Industrial Park"
           fill
           className="object-cover mix-blend-overlay"
@@ -87,7 +87,7 @@ export default function HomePage() {
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           {/* Hero section title: */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
-            <span data-cms-editable="hero-title-1">TRIỂN LÃM QUỐC TÉ</span>
+            <span data-cms-editable="hero-title-1">TRIỂN LÃM CUNG ỨNG KCN VĨNH LONG</span>
             <br />
             <span
               className="text-gradient bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
@@ -96,12 +96,15 @@ export default function HomePage() {
               KCN VĨNH LONG
             </span>
             <br />
-            <span data-cms-editable="hero-title-3">IPEX 2025</span>
+    
           </h1>
 
           {/* Hero description: */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
-            Nơi kết nối công nghệ và đổi mới - Khám phá tương lai của ngành công nghiệp
+            NGÀY SỰ KIỆN DIỄN RA : 01 - 03.11.2025
+          </p>
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
+            Địa điểm: KCN Hòa Phú
           </p>
 
           <div className="mb-12">
@@ -151,10 +154,10 @@ export default function HomePage() {
               className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
               data-cms-editable="reasons-title"
             >
-              Tại sao nên tham gia IPEX 2025?
+              Tại sao nên tham gia sự kiện này?
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Khám phá những lý do khiến IPEX 2025 trở thành sự kiện không thể bỏ lỡ
+              Khám phá những lơi ích thiết thực khi tham gia sự kiện triển lãm quốc tế hàng đầu miền Tây.
             </p>
           </div>
 
@@ -180,7 +183,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Đối tác chiến lược</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              Những thương hiệu hàng đầu đồng hành cùng IPEX 2025
+              Những đơn vị hàng đầu đồng hành cùng sự kiện.
             </p>
           </div>
 
@@ -206,7 +209,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-ipex-green to-ipex-blue">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Sẵn sàng tham gia IPEX 2025?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Sẵn sàng tham gia Industrial Expo2025?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Đừng bỏ lỡ cơ hội kết nối với hàng nghìn doanh nghiệp và khám phá những công nghệ tiên tiến nhất
           </p>

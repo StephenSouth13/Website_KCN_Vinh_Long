@@ -43,7 +43,7 @@ export default function NewsPage() {
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Tin tức & Sự kiện</h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">Cập nhật những thông tin mới nhất về IPEX 2025</p>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto">Cập nhật những thông tin mới nhất về Industrial Expo2025</p>
           </div>
         </div>
       </section>

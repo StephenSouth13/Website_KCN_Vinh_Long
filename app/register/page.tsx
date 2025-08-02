@@ -56,7 +56,7 @@ export default function RegisterPage() {
     // Simulate download
     toast({
       title: "Đang tải xuống...",
-      description: "Brochure IPEX 2025 sẽ được tải xuống trong giây lát.",
+      description: "Brochure Industrial Expo2025 sẽ được tải xuống trong giây lát.",
     })
   }
 
@@ -68,7 +68,7 @@ export default function RegisterPage() {
       <section className="py-20 bg-gradient-to-r from-ipex-green to-ipex-blue">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Đăng ký tham dự IPEX 2025</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Đăng ký tham dự Industrial Expo 2025</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
               Tham gia cùng hàng nghìn chuyên gia và doanh nghiệp hàng đầu
             </p>
@@ -176,12 +176,12 @@ export default function RegisterPage() {
                 <CardContent className="space-y-4">
                   <div>
                     <h4 className="font-semibold">Thời gian</h4>
-                    <p className="text-gray-600 dark:text-gray-400">15-17 tháng 3, 2025</p>
+                    <p className="text-gray-600 dark:text-gray-400">01 - 03 tháng 11, 2025</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Địa điểm</h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      Trung tâm Hội chợ Triển lãm Vĩnh Long
+                      KCN Hòa Phú
                       <br />
                       Thành phố Vĩnh Long, Vĩnh Long
                     </p>
@@ -189,9 +189,9 @@ export default function RegisterPage() {
                   <div>
                     <h4 className="font-semibold">Giờ mở cửa</h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      9:00 - 18:00 (Thứ 7 - Chủ nhật)
+                      8:30 - 17:00 (Thứ 7 và Chủ nhật)
                       <br />
-                      9:00 - 17:00 (Thứ 2)
+                     8:30 - 19:00 (Thứ 2)
                     </p>
                   </div>
                 </CardContent>
@@ -201,30 +201,30 @@ export default function RegisterPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <CheckCircle className="mr-2 h-5 w-5 text-ipex-green" />
-                    Quyền lợi khi tham dự
+                    Quyền lợi khi tham gia
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="mr-2 h-4 w-4 text-ipex-green mt-0.5 flex-shrink-0" />
-                      <span>Tham dự miễn phí tất cả các hoạt động</span>
+                      <span>Tham gia các hội thảo chuyên đề</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="mr-2 h-4 w-4 text-ipex-green mt-0.5 flex-shrink-0" />
-                      <span>Nhận tài liệu và quà tặng từ nhà tài trợ</span>
+                      <span>Tham gia khu vực Show Case công nghệ và thiết bị chuỗi cung ứng</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="mr-2 h-4 w-4 text-ipex-green mt-0.5 flex-shrink-0" />
-                      <span>Kết nối với hàng trăm doanh nghiệp</span>
+                      <span>Tham gia diễn đàn và xúc tiến thương mại KCN miền Tây</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="mr-2 h-4 w-4 text-ipex-green mt-0.5 flex-shrink-0" />
-                      <span>Tham gia các hội thảo chuyên môn</span>
+                      <span>Tham gia Workshop,chuyển đổi số trong nhà máy và Logistic</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="mr-2 h-4 w-4 text-ipex-green mt-0.5 flex-shrink-0" />
-                      <span>Ăn trưa miễn phí trong 3 ngày</span>
+                      <span>Tham gia chương trình kết nối giao thương và hợp tác đầu t</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -239,11 +239,10 @@ export default function RegisterPage() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-400">
-                    <li>• Lãnh đạo doanh nghiệp và nhà quản lý</li>
-                    <li>• Chuyên gia công nghệ và kỹ thuật</li>
-                    <li>• Nhà đầu tư và đối tác kinh doanh</li>
-                    <li>• Sinh viên và nghiên cứu sinh</li>
-                    <li>• Cơ quan quản lý nhà nước</li>
+                    <li>• Doanh nghiệp trong nước và FDI</li>
+                    <li>• Đơn vị cung ứng & Dịch vụ hỗ trợ doanh nghiệp</li>
+                    <li>• Cơ quan quản lý nhà nước & Chính quyền địa phương</li>
+                    <li>• Tổ chức nhà nước & Doanh nghiệp nước ngoài</li>
                   </ul>
                 </CardContent>
               </Card>

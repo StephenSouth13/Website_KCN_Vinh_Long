@@ -83,7 +83,7 @@ export default function ContributePage() {
               </div>
               <h1 className="text-3xl font-bold mb-4">Đăng ký thành công!</h1>
               <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-                Cảm ơn bạn đã đăng ký tham gia IPEX 2025. Chúng tôi sẽ xem xét hồ sơ và liên hệ với bạn trong vòng 24
+                Cảm ơn bạn đã đăng ký tham gia Industrial Expo2025. Chúng tôi sẽ xem xét hồ sơ và liên hệ với bạn trong vòng 24
                 giờ.
               </p>
               <div className="space-y-4">
@@ -120,7 +120,7 @@ export default function ContributePage() {
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Tham gia Triển lãm</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Đăng ký gian hàng và trở thành đối tác của IPEX 2025
+              Đăng ký gian hàng và trở thành đối tác của Industrial Expo2025
             </p>
           </div>
         </div>

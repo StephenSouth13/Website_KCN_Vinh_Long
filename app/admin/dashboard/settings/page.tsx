@@ -17,7 +17,7 @@ export default function SettingsPage() {
 
   const [settings, setSettings] = useState({
     general: {
-      siteName: "IPEX 2025 - Triển lãm Quốc tế KCN Vĩnh Long",
+      siteName: "Industrial Expo2025 - Triển lãm Quốc tế KCN Vĩnh Long",
       siteDescription: "Triển lãm Quốc tế Khu Công nghiệp Vĩnh Long - Nơi kết nối công nghệ và đổi mới",
       siteUrl: "https://ipex2025.vn",
       adminEmail: "admin@ipex2025.vn",
@@ -29,7 +29,7 @@ export default function SettingsPage() {
       smtpPort: "587",
       smtpUser: "noreply@ipex2025.vn",
       smtpPassword: "••••••••",
-      fromName: "IPEX 2025",
+      fromName: "Industrial Expo2025",
       fromEmail: "noreply@ipex2025.vn",
     },
     notifications: {

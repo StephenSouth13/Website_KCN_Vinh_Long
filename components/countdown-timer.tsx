@@ -18,7 +18,8 @@ export default function CountdownTimer() {
   })
 
   useEffect(() => {
-    const targetDate = new Date("2025-03-15T09:00:00").getTime()
+    // Thay đổi ngày, giờ và phút tại đây.
+    const targetDate = new Date("2025-11-03T09:00:00").getTime()
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -31,6 +32,9 @@ export default function CountdownTimer() {
           minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((difference % (1000 * 60)) / 1000),
         })
+      } else {
+        // Dừng đếm ngược khi thời gian kết thúc
+        clearInterval(timer)
       }
     }, 1000)
 

@@ -25,10 +25,10 @@ const values = [
 ]
 
 const achievements = [
-  { number: "5+", label: "Năm tổ chức" },
-  { number: "1000+", label: "Doanh nghiệp đã tham gia" },
-  { number: "50,000+", label: "Khách tham quan" },
-  { number: "25+", label: "Quốc gia tham gia" },
+  { number: "17+", label: "Năm hoạt động phát triển bền vững" },
+  { number: "50+", label: "Doanh nghiệp đã thu hút đầu tư vào khu công nghiệp" },
+  { number: "4+", label: "Quốc gia có dữ án đầu tư từ FDI" },
+  { number: "1", label: "Triển lãm xúc tiến công nghiệp trọng điểm đầu tiên tại Vĩnh Long" },
 ]
 
 export default function AboutPage() {
@@ -40,9 +40,9 @@ export default function AboutPage() {
       <section className="relative py-20 bg-gradient-to-r from-ipex-green to-ipex-blue">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Về IPEX 2025</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Về INDUSTRIAL EXPO 2025</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Triển lãm Quốc tế Khu Công nghiệp Vĩnh Long - Nơi hội tụ công nghệ và đổi mới
+              Triển lãm Quốc tế Khu Công nghiệp Vĩnh Long - Nơi kết nối doanh nghiệp,phát triển thu hút đầu tư trong khu vực.
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Khám phá IPEX 2025</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Khám phá INDUSTRIAL EXPO 2025</h2>
               <p className="text-xl text-gray-600 dark:text-gray-400">
                 Xem video giới thiệu về triển lãm và những hoạt động đặc sắc
               </p>
@@ -67,7 +67,7 @@ export default function AboutPage() {
                       <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                     </svg>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400">Video giới thiệu IPEX 2025</p>
+                  <p className="text-gray-600 dark:text-gray-400">Video giới thiệu INDUSTRIAL EXPO 2025</p>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                   tư, tạo việc làm cho hàng nghìn lao động địa phương.
                 </p>
                 <p>
-                  Triển lãm IPEX 2025 được tổ chức nhằm quảng bá tiềm năng phát triển của khu vực, kết nối các doanh
+                  Triển lãm Industrial Expo 2025 được tổ chức nhằm quảng bá tiềm năng phát triển của khu vực, kết nối các doanh
                   nghiệp và thúc đẩy ứng dụng công nghệ 4.0 trong sản xuất.
                 </p>
               </div>
@@ -155,8 +155,8 @@ export default function AboutPage() {
                 </div>
                 <div className="text-center">
                   <Globe className="h-8 w-8 text-ipex-green mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">20+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Quốc gia</div>
+                  <div className="text-2xl font-bold text-gray-900 dark:text-white">50+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Ngành sản xuất</div>
                 </div>
               </div>
             </div>
