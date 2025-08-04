@@ -87,15 +87,9 @@ export default function HomePage() {
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           {/* Hero section title: */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
-            <span data-cms-editable="hero-title-1">TRIỂN LÃM CUNG ỨNG KCN VĨNH LONG</span>
-            <br />
-            <span
-              className="text-gradient bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
-              data-cms-editable="hero-title-2"
-            >
-              KCN VĨNH LONG
-            </span>
-            <br />
+            <span data-cms-editable="hero-title-1">
+              TRIỂN LÃM CUNG ỨNG KHU CÔNG NGHIỆP HÒA PHÚ</span>
+          
     
           </h1>
 
@@ -104,7 +98,7 @@ export default function HomePage() {
             NGÀY SỰ KIỆN DIỄN RA : 01 - 03.11.2025
           </p>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
-            Địa điểm: KCN Hòa Phú
+            Địa điểm: Khu Công Nghiệp Hòa Phú
           </p>
 
           <div className="mb-12">
@@ -115,7 +109,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-ipex-green hover:bg-ipex-green/90 text-white px-8 py-4 text-lg">
               <Link href="/register">
-                Đăng ký tham dự
+                Đăng ký tham quan thương mại
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

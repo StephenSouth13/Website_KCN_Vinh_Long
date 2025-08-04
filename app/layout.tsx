@@ -1,14 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Poppins } from "next/font/google"
+import { Inter, Montserrat, Poppins } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 
-const poppins = Poppins({
+const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
+  variable: "--font-montserrat",
 })
 
 const inter = Inter({
@@ -19,7 +19,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Triển lãm Quốc tế KCN Vĩnh Long Industrial Expo2025",
   description: "Triển lãm Quốc tế Khu Công nghiệp Vĩnh Long 2025 - Nơi kết nối công nghệ và đổi mới",
-    generator: 'v0.dev'
+    generator: 'MSC'
+    
 }
 
 export default function RootLayout({
@@ -29,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi" suppressHydrationWarning>
-      <body className={`${poppins.variable} ${inter.variable} font-sans antialiased`}>
+      <body className={`${montserrat.variable} ${inter.variable} font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
           <Toaster />
