@@ -48,9 +48,9 @@ export default function CMSPage() {
         "Khu Công nghiệp Vĩnh Long là một trong những khu công nghiệp phát triển mạnh nhất tại vùng Đồng bằng sông Cửu Long...",
     },
     stats: [
-      { number: "200+", label: "Doanh nghiệp tham gia" },
-      { number: "15,000+", label: "Khách tham quan dự kiến" },
-      { number: "50+", label: "Quốc gia và vùng lãnh thổ" },
+      { number: "90+", label: "Doanh nghiệp tham gia" },
+      { number: "10,000+", label: "Khách tham quan dự kiến" },
+      { number: "50+", label: "Đối tác doanh nghiệp kết nối tại sự kiện" },
       { number: "3", label: "Ngày triển lãm" },
     ],
     reasons: {

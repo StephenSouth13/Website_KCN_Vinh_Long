@@ -46,9 +46,9 @@ const partners = [
 ]
 
 const stats = [
-  { number: "200+", label: "Doanh nghiệp tham gia" },
-  { number: "15,000+", label: "Khách tham quan dự kiến" },
-  { number: "50+", label: "Quốc gia và vùng lãnh thổ" },
+  { number: "90+", label: "Doanh nghiệp tham gia" },
+  { number: "10,000+", label: "Khách tham quan dự kiến" },
+  { number: "50+", label: "Doanh nghiệp kết nối tại sự kiện" },
   { number: "3", label: "Ngày triển lãm" },
 ]
 
@@ -74,12 +74,15 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 hero-gradient"></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#012A4A] via-[#013A63] to-[#01497C]"></div>
+
+  {/* Overlay xanh đậm trong suốt */}
+  <div className="absolute inset-0 bg-[#012A4A]/70"></div>
         <Image
-          src="/banners/banner.webp"
+          
           alt="Vĩnh Long Industrial Park"
           fill
+          
           className="object-cover mix-blend-overlay"
           priority
         />
@@ -89,8 +92,7 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
             <span data-cms-editable="hero-title-1">
               TRIỂN LÃM CUNG ỨNG KHU CÔNG NGHIỆP HÒA PHÚ</span>
-          
-    
+
           </h1>
 
           {/* Hero description: */}
