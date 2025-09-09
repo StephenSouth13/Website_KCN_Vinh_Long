@@ -1,5 +1,4 @@
 "use client"
-
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import CountdownTimer from "@/components/countdown-timer"
@@ -73,19 +72,20 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#012A4A] via-[#013A63] to-[#01497C]"></div>
+<section className="relative h-screen flex items-center justify-center overflow-hidden">
+    {/* Gradient nền từ xanh Navy đậm sang xanh lá cây đậm */}
+    <div className="absolute inset-0 bg-gradient-to-r from-[#002244] via-[#004D40] to-[#002244]"></div> 
 
-  {/* Overlay xanh đậm trong suốt */}
-  <div className="absolute inset-0 bg-[#012A4A]/70"></div>
-        <Image
-          src="/path/to/your/image.jpg"
-          alt="Vĩnh Long Industrial Park"
-          fill
-          
-          className="object-cover mix-blend-overlay"
-          priority
-        />
+    {/* Overlay kết hợp màu tối và độ trong suốt để hình ảnh rõ hơn */}
+    <div className="absolute inset-0 bg-[#002244]/70"></div> 
+
+    <Image
+        src="/banners/image.png"
+        alt="Vĩnh Long Industrial Park"
+        fill
+        className="object-cover mix-blend-overlay"
+        priority
+    />
 
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           {/* Hero section title: */}
