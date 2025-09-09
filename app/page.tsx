@@ -71,61 +71,61 @@ export default function HomePage() {
     <div className="min-h-screen">
       <Header />
 
-      {/* Hero Section */}
+ {/* Hero Section */}
 <section className="relative h-screen flex items-center justify-center overflow-hidden">
-    {/* Gradient nền từ xanh Navy đậm sang xanh lá cây đậm */}
-    <div className="absolute inset-0 bg-gradient-to-r from-[#002244] via-[#004D40] to-[#002244]"></div> 
-
-    {/* Overlay kết hợp màu tối và độ trong suốt để hình ảnh rõ hơn */}
-    <div className="absolute inset-0 bg-[#002244]/70"></div> 
+    {/* Lớp phủ gradient và vignette tinh tế */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 
     <Image
         src="/banners/image.png"
         alt="Vĩnh Long Industrial Park"
         fill
-        className="object-cover mix-blend-overlay"
+        className="object-cover" 
         priority
     />
 
-        <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
-          {/* Hero section title: */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
+    {/* Lớp phủ mờ (vignette) ở các góc */}
+    <div className="absolute inset-0 bg-black/30 opacity-70"></div>
+    
+    <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
+        {/* Hero section title: */}
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
             <span data-cms-editable="hero-title-1">
-              TRIỂN LÃM CUNG ỨNG KHU CÔNG NGHIỆP HÒA PHÚ</span>
+                TRIỂN LÃM CUNG ỨNG KHU CÔNG NGHIỆP HÒA PHÚ
+            </span>
+        </h1>
 
-          </h1>
-
-          {/* Hero description: */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
+        {/* Hero description: */}
+        <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
             NGÀY SỰ KIỆN DIỄN RA : 31.10 - 02.11.2025
-          </p>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
+        </p>
+        <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
             Địa điểm: Khu Công Nghiệp Hòa Phú
-          </p>
+        </p>
 
-          <div className="mb-12">
+        <div className="mb-12">
             <p className="text-white/80 mb-6 text-lg">Sự kiện bắt đầu trong:</p>
             <CountdownTimer />
-          </div>
+        </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-ipex-green hover:bg-ipex-green/90 text-white px-8 py-4 text-lg">
-              <Link href="/register">
-                Đăng ký tham quan thương mại
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+                <Link href="/register">
+                    Đăng ký tham quan thương mại
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
             </Button>
             <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg bg-transparent"
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg bg-transparent"
             >
-              <Link href="/contribute">Tham gia triển lãm</Link>
+                <Link href="/contribute">Tham gia triển lãm</Link>
             </Button>
-          </div>
         </div>
-      </section>
+    </div>
+</section>
 
       {/* Stats Section */}
       <section className="py-16 bg-white dark:bg-gray-900">
