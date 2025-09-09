@@ -79,7 +79,7 @@ export default function HomePage() {
   {/* Overlay xanh đậm trong suốt */}
   <div className="absolute inset-0 bg-[#012A4A]/70"></div>
         <Image
-          
+          src="/path/to/your/image.jpg"
           alt="Vĩnh Long Industrial Park"
           fill
           
@@ -97,7 +97,7 @@ export default function HomePage() {
 
           {/* Hero description: */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
-            NGÀY SỰ KIỆN DIỄN RA : 01 - 03.11.2025
+            NGÀY SỰ KIỆN DIỄN RA : 31.10 - 02.11.2025
           </p>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
             Địa điểm: Khu Công Nghiệp Hòa Phú
