@@ -113,11 +113,7 @@ export default function AdminLoginPage() {
             </Button>
           </form>
 
-          <div className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
-            <p>Demo credentials:</p>
-            <p>Email: admin@vsm.org.vn</p>
-            <p>Password: 123456</p>
-          </div>
+         
         </CardContent>
       </Card>
     </div>
