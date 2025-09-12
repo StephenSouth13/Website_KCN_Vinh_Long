@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
@@ -26,51 +25,42 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1000))
-
     toast({
       title: "Gửi thành công!",
       description: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất.",
     })
-
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
+    setFormData({ name: "", email: "", subject: "", message: "" })
     setIsSubmitting(false)
   }
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-ipex-green to-ipex-blue">
-        <div className="container mx-auto px-4">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Liên hệ với chúng tôi</h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn
-            </p>
-          </div>
+        <div className="container mx-auto px-4 text-center text-white">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Liên hệ với chúng tôi
+          </h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto">
+            Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn
+          </p>
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+      {/* Main Content */}
+      <section className="flex-1 py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
+            {/* Form */}
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Gửi tin nhắn</CardTitle>
@@ -130,7 +120,11 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-ipex-green hover:bg-ipex-green/90" disabled={isSubmitting}>
+                  <Button
+                    type="submit"
+                    className="w-full bg-ipex-green hover:bg-ipex-green/90"
+                    disabled={isSubmitting}
+                  >
                     <Send className="mr-2 h-4 w-4" />
                     {isSubmitting ? "Đang gửi..." : "Gửi tin nhắn"}
                   </Button>
@@ -138,8 +132,9 @@ export default function ContactPage() {
               </CardContent>
             </Card>
 
-            {/* Contact Information */}
+            {/* Info */}
             <div className="space-y-6">
+              {/* Address + Map */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
@@ -157,15 +152,21 @@ export default function ContactPage() {
                     <br />
                     Tỉnh Vĩnh Long, Việt Nam
                   </p>
-                  <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <MapPin className="h-12 w-12 mx-auto mb-2" />
-                      <p>Bản đồ Google Maps</p>
-                    </div>
+                  <div className="overflow-hidden rounded-lg shadow-md">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7868212.841791347!2d100.65256474115259!3d15.650269993604272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0797fd56b4cd3%3A0xe8d5db529996553e!2zS2h1IGPDtG5nIG5naGnhu4dwIEhvw6AgUGjDug!5e0!3m2!1svi!2s!4v1757647516393!5m2!1svi!2s"
+                      width="100%"
+                      height="300"
+                      style={{ border: 0 }}
+                      loading="lazy"
+                      allowFullScreen
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* Contact */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
@@ -178,14 +179,18 @@ export default function ContactPage() {
                     <Phone className="h-5 w-5 text-ipex-green" />
                     <div>
                       <p className="font-medium">Hotline</p>
-                      <p className="text-gray-600 dark:text-gray-400">+84 270 123 4567</p>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        +84 270 123 4567
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-ipex-green" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-gray-600 dark:text-gray-400">info@ipex2025.vn</p>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        info@ipex2025.vn
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -202,28 +207,29 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
+              {/* Quick Info */}
               <Card>
                 <CardHeader>
                   <CardTitle>Thông tin nhanh</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <h4 className="font-medium">Đăng ký tham dự</h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">Miễn phí cho tất cả khách tham quan</p>
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Đăng ký gian hàng</h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Liên hệ để biết thêm chi tiết về giá và gói dịch vụ
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Hỗ trợ kỹ thuật</h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Hỗ trợ 24/7 trong thời gian diễn ra triển lãm
-                      </p>
-                    </div>
+                <CardContent className="space-y-3">
+                  <div>
+                    <h4 className="font-medium">Đăng ký tham dự</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Miễn phí cho tất cả khách tham quan
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium">Đăng ký gian hàng</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Liên hệ để biết thêm chi tiết về giá và gói dịch vụ
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium">Hỗ trợ kỹ thuật</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Hỗ trợ 24/7 trong thời gian diễn ra triển lãm
+                    </p>
                   </div>
                 </CardContent>
               </Card>

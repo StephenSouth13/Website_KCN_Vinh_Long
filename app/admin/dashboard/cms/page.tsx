@@ -157,7 +157,14 @@ export default function CMSPage() {
         {/* Sidebar Navigation */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <CardTitle className="text-lg">Sections</CardTitle>
+            <CardTitle className="flex items-center">
+  {(() => {
+    const found = sections.find((sec) => sec.id === activeSection)
+    return found?.icon ? <found.icon className="mr-2 h-5 w-5" /> : null
+  })()}
+  {sections.find((sec) => sec.id === activeSection)?.name}
+</CardTitle>
+
           </CardHeader>
           <CardContent className="p-0">
             <nav className="space-y-1">
