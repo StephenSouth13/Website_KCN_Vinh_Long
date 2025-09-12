@@ -156,10 +156,7 @@ export default function RegisterPage() {
                 </form>
 
                 <div className="mt-6 pt-6 border-t">
-                  <Button onClick={handleDownloadBrochure} variant="outline" className="w-full bg-transparent">
-                    <Download className="mr-2 h-4 w-4" />
-                    Tải Brochure PDF
-                  </Button>
+                 
                 </div>
               </CardContent>
             </Card>

@@ -48,33 +48,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Khám phá INDUSTRIAL EXPO 2025</h2>
-              <p className="text-xl text-gray-600 dark:text-gray-400">
-                Xem video giới thiệu về triển lãm và những hoạt động đặc sắc
-              </p>
-            </div>
-
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-ipex-green rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                    </svg>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-400">Video giới thiệu INDUSTRIAL EXPO 2025</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Mission, Vision, Values */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
@@ -163,7 +136,7 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/banners/image.png"
                 alt="Khu Công nghiệp Vĩnh Long"
                 width={600}
                 height={500}
