@@ -48,19 +48,13 @@ export default function FloorplanPage() {
               <CardContent className="p-0">
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=600&width=1200"
+                    src="/map/2d.png"
                     alt="Sơ đồ triển lãm Industrial Expo2025"
                     width={1200}
                     height={600}
                     className="w-full h-auto"
                   />
-                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <MapPin className="h-16 w-16 mx-auto mb-4" />
-                      <h3 className="text-2xl font-bold mb-2">Sơ đồ Tương tác</h3>
-                      <p className="text-lg">Click vào các khu vực để xem chi tiết</p>
-                    </div>
-                  </div>
+                
                 </div>
               </CardContent>
             </Card>

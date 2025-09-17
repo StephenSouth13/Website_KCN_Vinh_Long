@@ -36,12 +36,12 @@ const reasons = [
 ]
 
 const partners = [
-  { name: "Kiến văn", logo: "/logo/kienvan.png" },
-  { name: "LG", logo: "/placeholder.svg?height=60&width=120" },
-  { name: "Panasonic", logo: "/placeholder.svg?height=60&width=120" },
-  { name: "Toyota", logo: "/placeholder.svg?height=60&width=120" },
-  { name: "Honda", logo: "/placeholder.svg?height=60&width=120" },
-  { name: "Mitsubishi", logo: "/placeholder.svg?height=60&width=120" },
+  { name: "Kiến văn", logo: "/logo/kienvan.webp" },
+  { name: "Báo Nhân Dân", logo: "/logo/BaoNhanDan.webp" },
+  { name: "BNI", logo: "/logo/BNI.webp" },
+  { name: "Báo Vĩnh Long", logo: "/logo/Bao_Vinh_Long.webp" },
+  { name: "KCN Hòa Phú", logo: "/logo/HoaPhu.webp" },
+  { name: "Khu Công Nghiệp", logo: "/logo/KCN.webp" },
 ]
 
 const stats = [
