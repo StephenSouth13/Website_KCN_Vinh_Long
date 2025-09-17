@@ -8,7 +8,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { Users, Building2, ArrowRight, Globe, Zap } from "lucide-react"
 
-// Add these imports at the top
 import { useState, useEffect } from "react"
 import CMSOverlay from "@/components/cms-overlay"
 
@@ -52,7 +51,6 @@ const stats = [
 ]
 
 export default function HomePage() {
-  // Add this state and effect at the beginning of the component
   const [cmsMode, setCmsMode] = useState(false)
 
   useEffect(() => {
@@ -60,7 +58,6 @@ export default function HomePage() {
       setCmsMode(document.body.classList.contains("cms-editing-mode"))
     }
 
-    // Listen for CMS mode changes
     const observer = new MutationObserver(handleCMSToggle)
     observer.observe(document.body, { attributes: true, attributeFilter: ["class"] })
 
@@ -75,30 +72,25 @@ export default function HomePage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#012A4A] via-[#013A63] to-[#01497C]"></div>
 
-  {/* Overlay xanh đậm trong suốt */}
-  <div className="absolute inset-0 bg-[#012A4A]/70"></div>
+        <div className="absolute inset-0 bg-[#012A4A]/70"></div>
         <Image
           src="/path/to/your/image.jpg"
           alt="Vĩnh Long Industrial Park"
           fill
-          
           className="object-cover mix-blend-overlay"
           priority
         />
 
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
-          {/* Hero section title: */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 animate-fade-in drop-shadow-lg">
             <span data-cms-editable="hero-title-1">
               TRIỂN LÃM CUNG ỨNG KHU CÔNG NGHIỆP HÒA PHÚ</span>
-
           </h1>
 
-          {/* Hero description: */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
-            NGÀY SỰ KIỆN DIỄN RA : 31.10 - 02.11.2025
+          <p className="text-xl md:text-2xl text-white font-semibold mb-2" data-cms-editable="hero-description">
+            NGÀY SỰ KIỆN DIỄN RA : <span className="text-ipex-green">31.10 - 02.11.2025</span>
           </p>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto" data-cms-editable="hero-description">
             Địa điểm: Khu Công Nghiệp Hòa Phú
           </p>
 
@@ -108,7 +100,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-ipex-green hover:bg-ipex-green/90 text-white px-8 py-4 text-lg">
+            <Button asChild size="lg" className="bg-ipex-green hover:bg-ipex-green/90 text-white px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105 drop-shadow-lg">
               <Link href="/register">
                 Đăng ký tham quan thương mại
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -118,7 +110,7 @@ export default function HomePage() {
               asChild
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg bg-transparent transition-all duration-300 transform hover:scale-105 drop-shadow-md"
             >
               <Link href="/contribute">Tham gia triển lãm</Link>
             </Button>
@@ -127,13 +119,13 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-24 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-ipex-green mb-2">{stat.number}</div>
-                <div className="text-gray-600 dark:text-gray-400">{stat.label}</div>
+                <div className="text-4xl md:text-5xl font-bold text-ipex-green mb-2 animate-pulse">{stat.number}</div>
+                <div className="text-gray-600 dark:text-gray-400 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -141,10 +133,9 @@ export default function HomePage() {
       </section>
 
       {/* Reasons Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+      <section className="py-24 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            {/* Section titles: */}
             <h2
               className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
               data-cms-editable="reasons-title"
@@ -152,15 +143,15 @@ export default function HomePage() {
               Tại sao nên tham gia sự kiện này?
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Khám phá những lơi ích thiết thực khi tham gia sự kiện triển lãm quốc tế hàng đầu miền Tây.
+              Khám phá những lợi ích thiết thực khi tham gia sự kiện triển lãm quốc tế hàng đầu miền Tây.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {reasons.map((reason, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+              <Card key={index} className="text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                 <CardContent className="p-6">
-                  <div className="w-16 h-16 bg-ipex-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-ipex-green/10 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 transform group-hover:scale-110">
                     <reason.icon className="h-8 w-8 text-ipex-green" />
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{reason.title}</h3>
@@ -173,7 +164,7 @@ export default function HomePage() {
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-24 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Đối tác chiến lược</h2>
@@ -186,7 +177,8 @@ export default function HomePage() {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all"
+                // Đã bỏ class "grayscale" để logo hiển thị màu gốc
+                className="flex items-center justify-center p-4 transition-all hover:scale-105"
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}
@@ -202,14 +194,14 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-ipex-green to-ipex-blue">
+      <section className="py-24 bg-gradient-to-r from-ipex-green to-ipex-blue">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Sẵn sàng tham gia Industrial Expo2025?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 drop-shadow-sm">Sẵn sàng tham gia Industrial Expo2025?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Đừng bỏ lỡ cơ hội kết nối với hàng nghìn doanh nghiệp và khám phá những công nghệ tiên tiến nhất
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="px-8 py-4 text-lg">
+            <Button asChild size="lg" variant="secondary" className="px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105 drop-shadow-md">
               <Link href="/register">
                 Đăng ký ngay
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -219,7 +211,7 @@ export default function HomePage() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-ipex-blue px-8 py-4 text-lg bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-ipex-blue px-8 py-4 text-lg bg-transparent transition-all duration-300 transform hover:scale-105"
             >
               <Link href="/about">Tìm hiểu thêm</Link>
             </Button>
@@ -227,9 +219,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Add the CMS overlay at the end before the closing div: */}
       <CMSOverlay isActive={cmsMode} onClose={() => setCmsMode(false)} />
-
       <Footer />
     </div>
   )
